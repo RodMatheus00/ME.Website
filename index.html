@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade do Sistema Pessoal — aplicativo pessoal de organização e produtividade com integração opcional ao LinkedIn.">
+  <meta name="robots" content="index,follow">
+  <title>Política de Privacidade — Sistema Pessoal</title>
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --navy-soft: #143056;
+      --blue: #3b82c4;
+      --blue-soft: #e8f1fa;
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1a2433;
+      --muted: #5a6a7e;
+      --border: #d7e0ec;
+      --radius: 14px;
+      --max: 48rem;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, var(--blue-soft) 0%, var(--bg) 220px);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: var(--navy); }
+
+    a:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+    }
+
+    .skip:focus {
+      left: 1rem;
+      top: 1rem;
+      z-index: 20;
+      background: #fff;
+      padding: 0.5rem 0.75rem;
+      border: 2px solid var(--navy);
+      border-radius: 8px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
+      color: #fff;
+      padding: 2rem 1.25rem 2.25rem;
+    }
+
+    .header-inner,
+    .content,
+    footer .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .brand {
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-bottom: 0.65rem;
+      font-weight: 600;
+    }
+
+    header h1 {
+      font-size: clamp(1.45rem, 4vw, 2rem);
+      line-height: 1.25;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .updated {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.9rem;
+    }
+
+    main {
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    .content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(1.25rem, 3vw, 2rem);
+      box-shadow: 0 10px 30px rgba(11, 31, 58, 0.06);
+    }
+
+    .intro {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav.toc {
+      background: var(--blue-soft);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    nav.toc h2 {
+      font-size: 0.95rem;
+      color: var(--navy);
+      margin-bottom: 0.6rem;
+    }
+
+    nav.toc ol {
+      margin-left: 1.2rem;
+      color: var(--text);
+    }
+
+    nav.toc li { margin: 0.25rem 0; }
+
+    nav.toc a { font-weight: 500; }
+
+    section {
+      margin-bottom: 1.75rem;
+      scroll-margin-top: 1rem;
+    }
+
+    section h2 {
+      color: var(--navy);
+      font-size: 1.15rem;
+      margin-bottom: 0.65rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 2px solid var(--blue-soft);
+    }
+
+    section p,
+    section li {
+      color: var(--text);
+      margin-bottom: 0.7rem;
+    }
+
+    section ul {
+      margin: 0.4rem 0 0.9rem 1.25rem;
+    }
+
+    section li { margin-bottom: 0.4rem; }
+
+    .note {
+      background: var(--blue-soft);
+      border-left: 4px solid var(--blue);
+      padding: 0.85rem 1rem;
+      border-radius: 0 10px 10px 0;
+      color: var(--navy);
+      margin: 0.85rem 0 0;
+    }
+
+    footer {
+      background: var(--navy);
+      color: rgba(255, 255, 255, 0.88);
+      padding: 1.5rem 1.25rem 2rem;
+      font-size: 0.92rem;
+    }
+
+    footer a { color: #9ec5ea; }
+
+    footer p { margin-bottom: 0.5rem; }
+
+    footer .disclaimer {
+      opacity: 0.9;
+      margin-top: 0.85rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    @media (max-width: 560px) {
+      header { padding: 1.5rem 1rem 1.75rem; }
+      main { padding: 1rem 0.85rem 2.5rem; }
+      .content { padding: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header>
+    <div class="header-inner">
+      <p class="brand">Sistema Pessoal</p>
+      <h1>Política de Privacidade — Sistema Pessoal</h1>
+      <p class="updated">Última atualização: 3 de agosto de 2026</p>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <article class="content">
+      <p class="intro">
+        Esta Política de Privacidade descreve, em linguagem clara, como o
+        <strong>Sistema Pessoal</strong> trata dados pessoais no contexto da
+        integração opcional com o LinkedIn. Ela se destina a informar usuários
+        e a atender requisitos de transparência no cadastro do aplicativo no
+        LinkedIn Developers.
+      </p>
+
+      <nav class="toc" aria-label="Sumário">
+        <h2>Sumário</h2>
+        <ol>
+          <li><a href="#responsavel">Responsável e finalidade</a></li>
+          <li><a href="#dados">Dados que podem ser tratados</a></li>
+          <li><a href="#finalidades">Finalidades</a></li>
+          <li><a href="#publicacoes">Publicações e ações</a></li>
+          <li><a href="#compartilhamento">Compartilhamento</a></li>
+          <li><a href="#armazenamento">Armazenamento e segurança</a></li>
+          <li><a href="#retencao">Retenção</a></li>
+          <li><a href="#revogacao">Revogação e exclusão</a></li>
+          <li><a href="#direitos">Direitos do usuário</a></li>
+          <li><a href="#terceiros">Serviços de terceiros</a></li>
+          <li><a href="#alteracoes">Alterações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ol>
+      </nav>
+
+      <section id="responsavel">
+        <h2>1. Responsável e finalidade</h2>
+        <p>
+          O <strong>Sistema Pessoal</strong> é um aplicativo pessoal de
+          organização e produtividade, desenvolvido e mantido de forma
+          independente pelo responsável indicado nesta política.
+        </p>
+        <p>
+          A integração com o LinkedIn, quando utilizada, é uma funcionalidade
+          opcional e independente. O aplicativo
+          <strong>não é patrocinado, mantido ou oficialmente representado</strong>
+          pelo LinkedIn ou por empresas afiliadas ao LinkedIn.
+        </p>
+      </section>
+
+      <section id="dados">
+        <h2>2. Dados que podem ser tratados</h2>
+        <p>
+          Os dados tratados dependem das <strong>permissões (escopos) efetivamente
+          autorizadas</strong> pelo usuário e dos produtos/recursos disponibilizados
+          pelo LinkedIn ao aplicativo. <strong>Nem todos os itens abaixo são
+          coletados em todos os casos</strong>.
+        </p>
+        <p>Conforme as permissões concedidas, podem ser tratados:</p>
+        <ul>
+          <li>identificador da conta LinkedIn;</li>
+          <li>nome;</li>
+          <li>foto de perfil;</li>
+          <li>endereço de e-mail, quando disponibilizado e autorizado;</li>
+          <li>informações necessárias para confirmar a identidade;</li>
+          <li>tokens OAuth necessários para manter a conexão;</li>
+          <li>registros técnicos de autenticação, auditoria e segurança;</li>
+          <li>
+            conteúdo ou dados relacionados a funcionalidades do LinkedIn
+            somente quando a funcionalidade estiver habilitada e autorizada.
+          </li>
+        </ul>
+        <p class="note">
+          Se um escopo ou produto não for concedido ou não estiver disponível,
+          os dados correspondentes não serão obtidos por essa via.
+        </p>
+      </section>
+
+      <section id="finalidades">
+        <h2>3. Finalidades</h2>
+        <p>Os dados podem ser utilizados para:</p>
+        <ul>
+          <li>autenticar e identificar o usuário;</li>
+          <li>conectar a conta do LinkedIn ao Sistema Pessoal;</li>
+          <li>exibir o estado da conexão;</li>
+          <li>realizar funcionalidades solicitadas pelo próprio usuário;</li>
+          <li>manter segurança, auditoria e prevenção de erros;</li>
+          <li>cumprir requisitos técnicos da integração.</li>
+        </ul>
+      </section>
+
+      <section id="publicacoes">
+        <h2>4. Publicações e ações</h2>
+        <p>
+          Nenhuma publicação ou ação externa no LinkedIn deve ser realizada sem
+          <strong>ação e autorização explícita</strong> do usuário.
+        </p>
+        <p>
+          O sistema não deve afirmar que uma ação foi executada quando apenas
+          gerou um conteúdo, uma sugestão, uma aprovação interna ou um handoff
+          (orientação para conclusão manual).
+        </p>
+        <p>
+          Permissões adicionais só poderão ser usadas quando estiverem
+          disponíveis e tiverem sido concedidas pelo LinkedIn e pelo usuário.
+        </p>
+      </section>
+
+      <section id="compartilhamento">
+        <h2>5. Compartilhamento</h2>
+        <ul>
+          <li>Não vendemos dados pessoais.</li>
+          <li>Não usamos dados para publicidade comportamental.</li>
+          <li>Não compartilhamos dados com anunciantes.</li>
+          <li>
+            Eventuais serviços técnicos, quando utilizados, devem limitar-se ao
+            funcionamento, armazenamento e segurança do sistema.
+          </li>
+        </ul>
+      </section>
+
+      <section id="armazenamento">
+        <h2>6. Armazenamento e segurança</h2>
+        <p>
+          Os dados podem ser armazenados em infraestrutura controlada pelo
+          responsável pelo Sistema Pessoal.
+        </p>
+        <p>
+          São adotadas medidas razoáveis de segurança e controle de acesso,
+          adequadas ao caráter pessoal do aplicativo. Isso não constitui
+          garantia de segurança absoluta: nenhum sistema é isento de riscos.
+        </p>
+        <p>
+          Por segurança, esta política não descreve detalhes internos sensíveis
+          de arquitetura, servidores, bancos de dados ou credenciais.
+        </p>
+      </section>
+
+      <section id="retencao">
+        <h2>7. Retenção</h2>
+        <p>
+          Mantemos os dados somente pelo período necessário à integração, à
+          segurança e às obrigações aplicáveis.
+        </p>
+        <p>
+          Quando deixarem de ser necessários, os dados poderão ser excluídos ou
+          anonimizados, dentro das limitações técnicas e legais aplicáveis.
+        </p>
+      </section>
+
+      <section id="revogacao">
+        <h2>8. Revogação e exclusão</h2>
+        <ul>
+          <li>O usuário pode desconectar a integração no Sistema Pessoal.</li>
+          <li>
+            O usuário pode revogar a autorização nas configurações da própria
+            conta do LinkedIn.
+          </li>
+          <li>
+            Após a revogação, recursos dependentes da integração podem deixar de
+            funcionar.
+          </li>
+          <li>
+            Solicitações de acesso, correção ou exclusão podem ser feitas pelo
+            canal de contato indicado nesta política.
+          </li>
+        </ul>
+      </section>
+
+      <section id="direitos">
+        <h2>9. Direitos do usuário</h2>
+        <p>Sem prejuízo de outros direitos previstos na legislação aplicável, o usuário pode solicitar:</p>
+        <ul>
+          <li>acesso aos dados tratados;</li>
+          <li>correção de dados incompletos ou desatualizados;</li>
+          <li>revogação da autorização;</li>
+          <li>exclusão, quando aplicável;</li>
+          <li>informação sobre o tratamento.</li>
+        </ul>
+      </section>
+
+      <section id="terceiros">
+        <h2>10. Serviços de terceiros</h2>
+        <p>
+          O uso do LinkedIn também está sujeito aos termos e à política de
+          privacidade do LinkedIn. Recomendamos a leitura desses documentos
+          junto à conta LinkedIn do usuário.
+        </p>
+        <p>
+          Esta página não incorpora textos extensos nem conteúdo protegido do
+          LinkedIn.
+        </p>
+      </section>
+
+      <section id="alteracoes">
+        <h2>11. Alterações</h2>
+        <p>
+          Esta política pode ser atualizada para refletir mudanças no
+          aplicativo, na integração ou em requisitos legais e técnicos.
+        </p>
+        <p>
+          A data da última atualização é exibida no topo desta página.
+        </p>
+      </section>
+
+      <section id="contato">
+        <h2>12. Contato</h2>
+        <p>Para dúvidas ou solicitações relacionadas a esta política:</p>
+        <ul>
+          <li>
+            Perfil do responsável no GitHub:
+            <a href="https://github.com/RodMatheus00" rel="noopener noreferrer">
+              https://github.com/RodMatheus00
+            </a>
+          </li>
+          <li>
+            Página associada ao aplicativo: <strong>Meu Painel Pessoal</strong>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p><strong>Sistema Pessoal</strong> — Meu Painel Pessoal</p>
+      <p>
+        Contato:
+        <a href="https://github.com/RodMatheus00" rel="noopener noreferrer">GitHub @RodMatheus00</a>
+      </p>
+      <p class="disclaimer">
+        Sistema Pessoal — integração independente e não afiliada ao LinkedIn.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
